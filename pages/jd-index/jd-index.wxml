@@ -1,0 +1,34 @@
+<!--pages/jd-index/jd-index.wxml-->
+<!-- 顶部轮播图 -->
+<swiper autoplay="{{autoplay}}" interval="{{interval}}">
+  <block wx:for="{{imgs}}">
+    <swiper-item>
+      <image src="{{item}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 10个京东图标 -->
+<view class="content">
+  <block wx:for="{{element}}">
+    <view class="content-item">
+      <view>
+        <image src="{{item.image}}" style="height:78rpx;width:86rpx;"></image>
+      </view>
+      <view>{{item.name}}</view>
+    </view>
+  </block>
+</view>
+<!-- 商品展示 -->
+<view class="mid">
+  <image src="/images/index/11.png" style="height:120rpx;width:116rpx"></image>
+  <image src="/images/index/12.png" style="height:120rpx;width:600rpx"></image>
+</view>
+<view>
+  <image src="/images/index/13.png" style="height:200rpx;width:100%"></image>
+</view>
+<view class="hr"></view>
+<view class="footer">
+  <text>京东拼购</text>
+  <image src="/images/index/14.png" style="width:300rpx;height:80rpx"></image>
+</view>
